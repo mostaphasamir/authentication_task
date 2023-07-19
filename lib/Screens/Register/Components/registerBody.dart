@@ -1,9 +1,10 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:crypt/crypt.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:crypto/crypto.dart';
+import 'dart:convert';
 import '../../../../components/buttons.dart';
 import 'package:flutter/material.dart';
 import '../../../../constants.dart';
@@ -274,7 +275,7 @@ class _RegisterBodyState extends State<RegisterBody> {
     db.collection("users").doc().set({
       "userName": name,
       "userEmail": email,
-      "userPassword": password,
+      "userPassword": _hashString(text: password),
     }).onError((error, _) {
       print(error.toString());
       _isStored = false;
@@ -282,6 +283,10 @@ class _RegisterBodyState extends State<RegisterBody> {
     print(_isStored.toString());
     return _isStored;
   }
-  //TODO implement hash function for the password
 
+  String _hashString({required String text}) {
+    var bytes = utf8.encode(text); // data being hashed
+
+    return sha1.convert(bytes).toString();
+  }
 }

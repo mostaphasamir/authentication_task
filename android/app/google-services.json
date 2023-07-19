@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "255951596029",
+    "project_id": "auth-task-89466",
+    "storage_bucket": "auth-task-89466.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255951596029:android:9523f44bcb4d922a9b9194",
+        "android_client_info": {
+          "package_name": "com.mostafa.Abs.AI.authentication_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255951596029-7fk6mdsdoa7fqebob2mnt89vhtlbrrbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mostafa.Abs.AI.authentication_task",
+            "certificate_hash": "cb42b242864a1b2bebb01c179be2d0e672e203bf"
+          }
+        },
+        {
+          "client_id": "255951596029-0ephgfu0oqe3uid3v7ernuor41tl58qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkTpZf58YBBi_3YIhNLCF3WAITOXjJPbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255951596029-0ephgfu0oqe3uid3v7ernuor41tl58qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
